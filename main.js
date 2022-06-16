@@ -24,7 +24,7 @@ var decrypt = function (encrypted, key) {
 }
 
 //encrypt
-encrypt = function (data, key) {
+var encrypt = function (data, key) {
 
     let iv = CryptoJS.lib.WordArray.random(16);
     key = CryptoJS.enc.Base64.parse(key);
